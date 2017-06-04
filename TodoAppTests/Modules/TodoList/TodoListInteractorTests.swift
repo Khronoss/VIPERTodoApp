@@ -1,15 +1,14 @@
 //
-//  TodoAppTests.swift
-//  TodoAppTests
+//  TodoListInteractorTests.swift
+//  TodoApp
 //
 //  Created by Anthony Merle on 04/06/2017.
 //  Copyright © 2017 Anthony Merle. All rights reserved.
 //
 
 import XCTest
-@testable import TodoApp
 
-class TodoAppTests: XCTestCase {
+class TodoListInteractorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

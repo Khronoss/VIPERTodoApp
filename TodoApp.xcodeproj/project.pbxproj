@@ -12,8 +12,8 @@
 		FA2F61E21EE44F8800BEE16B /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61E01EE44F8800BEE16B /* TodoApp.xcdatamodeld */; };
 		FA2F61E41EE44F8800BEE16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E31EE44F8800BEE16B /* Assets.xcassets */; };
 		FA2F61E71EE44F8800BEE16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E51EE44F8800BEE16B /* LaunchScreen.storyboard */; };
-		FA2F61F21EE44F8800BEE16B /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61F11EE44F8800BEE16B /* TodoAppTests.swift */; };
 		FA2F61FD1EE44F8800BEE16B /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61FC1EE44F8800BEE16B /* TodoAppUITests.swift */; };
+		FA2F62121EE452C300BEE16B /* TodoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,12 @@
 		FA2F61E61EE44F8800BEE16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2F61E81EE44F8800BEE16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2F61ED1EE44F8800BEE16B /* TodoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA2F61F11EE44F8800BEE16B /* TodoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppTests.swift; sourceTree = "<group>"; };
 		FA2F61F31EE44F8800BEE16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2F61F81EE44F8800BEE16B /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F61FC1EE44F8800BEE16B /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		FA2F61FE1EE44F8800BEE16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListInteractorTests.swift; sourceTree = "<group>"; };
+		FA2F62131EE4533300BEE16B /* TodoAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +113,10 @@
 		FA2F61F01EE44F8800BEE16B /* TodoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA2F61F11EE44F8800BEE16B /* TodoAppTests.swift */,
+				FA2F620D1EE4525700BEE16B /* Common */,
+				FA2F620E1EE4525700BEE16B /* Modules */,
 				FA2F61F31EE44F8800BEE16B /* Info.plist */,
+				FA2F62131EE4533300BEE16B /* TodoAppTests-Bridging-Header.h */,
 			);
 			path = TodoAppTests;
 			sourceTree = "<group>";
@@ -147,6 +150,29 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		FA2F620D1EE4525700BEE16B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA2F620E1EE4525700BEE16B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F620F1EE4526B00BEE16B /* TodoList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA2F620F1EE4526B00BEE16B /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */,
+			);
+			path = TodoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +249,7 @@
 					FA2F61EC1EE44F8800BEE16B = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JQSW558QPZ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FA2F61D51EE44F8800BEE16B;
 					};
@@ -295,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2F61F21EE44F8800BEE16B /* TodoAppTests.swift in Sources */,
+				FA2F62121EE452C300BEE16B /* TodoListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,11 +499,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
 				INFOPLIST_FILE = TodoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyMerle.TodoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoAppTests/TodoAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoApp.app/TodoApp";
 			};
@@ -487,11 +517,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
 				INFOPLIST_FILE = TodoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyMerle.TodoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoAppTests/TodoAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoApp.app/TodoApp";
 			};
