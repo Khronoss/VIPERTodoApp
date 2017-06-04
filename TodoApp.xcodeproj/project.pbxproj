@@ -16,6 +16,13 @@
 		FA54C2DB1EE45C2D00848FD0 /* DeviceClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2CD1EE45C2D00848FD0 /* DeviceClock.swift */; };
 		FA54C2DC1EE45C2D00848FD0 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2D01EE45C2D00848FD0 /* TodoItem.swift */; };
 		FA54C2DD1EE45C2D00848FD0 /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2D21EE45C2D00848FD0 /* TodoApp.xcdatamodeld */; };
+		FA54C2E11EE4619000848FD0 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E01EE4619000848FD0 /* TodoListInteractor.swift */; };
+		FA54C2E31EE461A500848FD0 /* TodoListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E21EE461A500848FD0 /* TodoListInteractorIO.swift */; };
+		FA54C2E61EE4648000848FD0 /* TodoListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E51EE4648000848FD0 /* TodoListDataManager.swift */; };
+		FA54C2E81EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E71EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift */; };
+		FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */; };
+		FA54C2EE1EE4684100848FD0 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2ED1EE4684100848FD0 /* PListConverter.swift */; };
+		FA54C2F01EE46A6000848FD0 /* TodoItemPListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 		FA54C2CD1EE45C2D00848FD0 /* DeviceClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceClock.swift; sourceTree = "<group>"; };
 		FA54C2D01EE45C2D00848FD0 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		FA54C2D31EE45C2D00848FD0 /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
+		FA54C2E01EE4619000848FD0 /* TodoListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListInteractor.swift; sourceTree = "<group>"; };
+		FA54C2E21EE461A500848FD0 /* TodoListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListInteractorIO.swift; sourceTree = "<group>"; };
+		FA54C2E51EE4648000848FD0 /* TodoListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListDataManager.swift; sourceTree = "<group>"; };
+		FA54C2E71EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsTodoListDataManager.swift; sourceTree = "<group>"; };
+		FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
+		FA54C2ED1EE4684100848FD0 /* PListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
+		FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemPListConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +178,7 @@
 		FA54C2CA1EE45C2D00848FD0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FA54C2EB1EE4681800848FD0 /* Data converter */,
 				FA54C2CB1EE45C2D00848FD0 /* Clock */,
 				FA54C2CE1EE45C2D00848FD0 /* Extensions */,
 				FA54C2CF1EE45C2D00848FD0 /* Model */,
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FA54C2D21EE45C2D00848FD0 /* TodoApp.xcdatamodeld */,
+				FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -215,6 +231,7 @@
 		FA54C2D51EE45C2D00848FD0 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				FA54C2E41EE4646B00848FD0 /* DataManager */,
 				FA54C2D61EE45C2D00848FD0 /* Interactor */,
 				FA54C2D71EE45C2D00848FD0 /* Presenter */,
 				FA54C2D81EE45C2D00848FD0 /* View */,
@@ -225,6 +242,8 @@
 		FA54C2D61EE45C2D00848FD0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FA54C2E01EE4619000848FD0 /* TodoListInteractor.swift */,
+				FA54C2E21EE461A500848FD0 /* TodoListInteractorIO.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -259,6 +278,24 @@
 				FA2F61E81EE44F8800BEE16B /* Info.plist */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FA54C2E41EE4646B00848FD0 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA54C2E51EE4648000848FD0 /* TodoListDataManager.swift */,
+				FA54C2E71EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FA54C2EB1EE4681800848FD0 /* Data converter */ = {
+			isa = PBXGroup;
+			children = (
+				FA54C2ED1EE4684100848FD0 /* PListConverter.swift */,
+				FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */,
+			);
+			path = "Data converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,10 +436,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA54C2F01EE46A6000848FD0 /* TodoItemPListConverter.swift in Sources */,
+				FA54C2E81EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift in Sources */,
 				FA54C2DB1EE45C2D00848FD0 /* DeviceClock.swift in Sources */,
 				FA54C2DC1EE45C2D00848FD0 /* TodoItem.swift in Sources */,
+				FA54C2EE1EE4684100848FD0 /* PListConverter.swift in Sources */,
 				FA54C2D91EE45C2D00848FD0 /* AppDelegate.swift in Sources */,
+				FA54C2E61EE4648000848FD0 /* TodoListDataManager.swift in Sources */,
+				FA54C2E31EE461A500848FD0 /* TodoListInteractorIO.swift in Sources */,
+				FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */,
 				FA54C2DD1EE45C2D00848FD0 /* TodoApp.xcdatamodeld in Sources */,
+				FA54C2E11EE4619000848FD0 /* TodoListInteractor.swift in Sources */,
 				FA54C2DA1EE45C2D00848FD0 /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
