@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FA2F61DA1EE44F8800BEE16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61D91EE44F8800BEE16B /* AppDelegate.swift */; };
-		FA2F61DC1EE44F8800BEE16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61DB1EE44F8800BEE16B /* ViewController.swift */; };
 		FA2F61DF1EE44F8800BEE16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61DD1EE44F8800BEE16B /* Main.storyboard */; };
 		FA2F61E21EE44F8800BEE16B /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61E01EE44F8800BEE16B /* TodoApp.xcdatamodeld */; };
 		FA2F61E41EE44F8800BEE16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E31EE44F8800BEE16B /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		FA2F61D61EE44F8800BEE16B /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F61D91EE44F8800BEE16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA2F61DB1EE44F8800BEE16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA2F61DE1EE44F8800BEE16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA2F61E11EE44F8800BEE16B /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
 		FA2F61E31EE44F8800BEE16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +97,9 @@
 		FA2F61D81EE44F8800BEE16B /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA2F620A1EE4515500BEE16B /* Modules */,
+				FA2F620C1EE4519300BEE16B /* Common */,
 				FA2F61D91EE44F8800BEE16B /* AppDelegate.swift */,
-				FA2F61DB1EE44F8800BEE16B /* ViewController.swift */,
 				FA2F61DD1EE44F8800BEE16B /* Main.storyboard */,
 				FA2F61E31EE44F8800BEE16B /* Assets.xcassets */,
 				FA2F61E51EE44F8800BEE16B /* LaunchScreen.storyboard */,
@@ -126,6 +125,28 @@
 				FA2F61FE1EE44F8800BEE16B /* Info.plist */,
 			);
 			path = TodoAppUITests;
+			sourceTree = "<group>";
+		};
+		FA2F620A1EE4515500BEE16B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F620B1EE4517500BEE16B /* TodoList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA2F620B1EE4517500BEE16B /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		FA2F620C1EE4519300BEE16B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +217,8 @@
 				TargetAttributes = {
 					FA2F61D51EE44F8800BEE16B = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = JQSW558QPZ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = C87TT6NXFE;
+						ProvisioningStyle = Manual;
 					};
 					FA2F61EC1EE44F8800BEE16B = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -265,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2F61DC1EE44F8800BEE16B /* ViewController.swift in Sources */,
 				FA2F61E21EE44F8800BEE16B /* TodoApp.xcdatamodeld in Sources */,
 				FA2F61DA1EE44F8800BEE16B /* AppDelegate.swift in Sources */,
 			);
@@ -419,11 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQSW558QPZ;
+				DEVELOPMENT_TEAM = C87TT6NXFE;
 				INFOPLIST_FILE = TodoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyMerle.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8764cb8b-1b9f-49c2-8a12-600112f4bec1";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardDev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -432,11 +455,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQSW558QPZ;
+				DEVELOPMENT_TEAM = C87TT6NXFE;
 				INFOPLIST_FILE = TodoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyMerle.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8764cb8b-1b9f-49c2-8a12-600112f4bec1";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardDev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -518,6 +544,7 @@
 				FA2F62031EE44F8800BEE16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2F62041EE44F8800BEE16B /* Build configuration list for PBXNativeTarget "TodoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +553,7 @@
 				FA2F62061EE44F8800BEE16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2F62071EE44F8800BEE16B /* Build configuration list for PBXNativeTarget "TodoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +562,7 @@
 				FA2F62091EE44F8800BEE16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
