@@ -13,7 +13,6 @@
 		FA2F61E41EE44F8800BEE16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E31EE44F8800BEE16B /* Assets.xcassets */; };
 		FA2F61E71EE44F8800BEE16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E51EE44F8800BEE16B /* LaunchScreen.storyboard */; };
 		FA2F61FD1EE44F8800BEE16B /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F61FC1EE44F8800BEE16B /* TodoAppUITests.swift */; };
-		FA2F62121EE452C300BEE16B /* TodoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		FA2F61F81EE44F8800BEE16B /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F61FC1EE44F8800BEE16B /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		FA2F61FE1EE44F8800BEE16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListInteractorTests.swift; sourceTree = "<group>"; };
 		FA2F62131EE4533300BEE16B /* TodoAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,7 +168,6 @@
 		FA2F620F1EE4526B00BEE16B /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				FA2F62111EE452C300BEE16B /* TodoListInteractorTests.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2F62121EE452C300BEE16B /* TodoListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
