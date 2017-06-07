@@ -8,14 +8,29 @@
 
 import UIKit
 
-class TodoListInteractor: TodoListInteractorInput {
+class TodoListInteractor: NSObject, TodoListInteractorInput {
     
     var output: TodoListInteractorOutput?
     
-    var clock: Clock
-    var dataManager: TodoListDataManager
+    var calendar: Calendar!
+    var clock: Clock!
+    var dataManager: TodoListDataManager!
     
-    func findUpcomingItems() {
+    required init(calendar: Calendar, clock: Clock, dataManager: TodoListDataManager) {
+        super.init()
         
+        self.calendar = calendar
+        self.clock = clock
+        self.dataManager = dataManager
+    }
+    
+    func findTodoItems() {
+        
+        let today = clock.today()
+        let nextWeek = calendar.dateForEndOfFollowingWeekWith(today)
+
+        dataManager.todoItems(from: today, to: nextWeek) { (todoItems) in
+            self.output?.todoItemsFound(todoItems)
+        }
     }
 }

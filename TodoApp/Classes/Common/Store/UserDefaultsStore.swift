@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserDefaultsStore {
+class UserDefaultsStore: NSObject {
     var userDefaults: UserDefaults
     var todoItemPlistConverter: TodoItemPListConverter
     

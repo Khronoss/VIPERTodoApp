@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserDefaultsTodoListDataManager: TodoListDataManager {
+class UserDefaultsTodoListDataManager: NSObject, TodoListDataManager {
     var userDefaultsStore: UserDefaultsStore
     
     init(defaultsStore: UserDefaultsStore) {

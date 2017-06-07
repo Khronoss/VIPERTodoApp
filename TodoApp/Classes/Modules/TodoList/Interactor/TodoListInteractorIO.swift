@@ -9,9 +9,9 @@
 import Foundation
 
 protocol TodoListInteractorInput {
-    func findUpcomingItems() -> Void
+    func findTodoItems() -> Void
 }
 
 protocol TodoListInteractorOutput {
-    func upcomingItemsFound(_ upcomingItems: [TodoItem]) -> Void
+    func todoItemsFound(_ upcomingItems: [TodoItem]) -> Void
 }

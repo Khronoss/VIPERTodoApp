@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TodoItemPListConverter: PListConverter {
+class TodoItemPListConverter: NSObject, PListConverter {
     typealias T = TodoItem
     
     private let titlePListKey = "title"
