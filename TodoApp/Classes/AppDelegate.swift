@@ -14,12 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var appDependencies = ApplicationDependencies()
+    var appDependencies: ApplicationDependencies!
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let builder = TodoListModuleBuilder()
+        
+        appDependencies = ApplicationDependencies(builder: builder)
         appDependencies.initializeRootModule(in: self.window)
         
         return true

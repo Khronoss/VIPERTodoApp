@@ -29,6 +29,7 @@
 		FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */; };
 		FA54C2EE1EE4684100848FD0 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2ED1EE4684100848FD0 /* PListConverter.swift */; };
 		FA54C2F01EE46A6000848FD0 /* TodoItemPListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */; };
+		FAA2CB7B1EE9F7FA000EFCE1 /* TodoListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2CB7A1EE9F7FA000EFCE1 /* TodoListModuleBuilder.swift */; };
 		FAFC798C1EE9ED1A0080FECE /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC798B1EE9ED1A0080FECE /* ApplicationDependencies.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 		FA54C2ED1EE4684100848FD0 /* PListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
 		FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemPListConverter.swift; sourceTree = "<group>"; };
+		FAA2CB7A1EE9F7FA000EFCE1 /* TodoListModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListModuleBuilder.swift; sourceTree = "<group>"; };
 		FAFC798B1EE9ED1A0080FECE /* ApplicationDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +255,7 @@
 				FA54C2D81EE45C2D00848FD0 /* View */,
 				FA1273541EE8A88C00BE1012 /* TodoListModuleInterface.swift */,
 				FA12735C1EE8AEBC00BE1012 /* TodoListWireframe.swift */,
+				FAA2CB7A1EE9F7FA000EFCE1 /* TodoListModuleBuilder.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				FA12735B1EE8AB6700BE1012 /* TodoListTableViewController.swift in Sources */,
 				FA54C2E11EE4619000848FD0 /* TodoListInteractor.swift in Sources */,
 				FA54C2DA1EE45C2D00848FD0 /* Clock.swift in Sources */,
+				FAA2CB7B1EE9F7FA000EFCE1 /* TodoListModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

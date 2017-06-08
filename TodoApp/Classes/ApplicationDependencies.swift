@@ -12,17 +12,17 @@ class ApplicationDependencies: NSObject {
 
     var rootWireframe: TodoListWireframe!
     
-    override init() {
+    required init(builder: TodoListModuleBuilder) {
         super.init()
         
-        generateDependencies()
+        generateDependencies(withModuleBuilder: builder)
     }
     
     func initializeRootModule(in window: UIWindow?) -> Void {
         rootWireframe.presentListInterfaceFrom(window: window)
     }
     
-    private func generateDependencies() -> Void {
+    private func generateDependencies(withModuleBuilder builder: TodoListModuleBuilder) -> Void {
         
         let calendar = Calendar.current
         let clock = DeviceClock()
@@ -31,14 +31,6 @@ class ApplicationDependencies: NSObject {
         let defaultsStore = UserDefaultsStore(userDefaults: UserDefaults.standard, plistConverter: plistConverter)
         let listDataManager = UserDefaultsTodoListDataManager(defaultsStore: defaultsStore)
         
-        let listWireframe = TodoListWireframe()
-        let listPresenter = TodoListPresenter()
-        let listInteractor = TodoListInteractor(calendar: calendar, clock: clock, dataManager: listDataManager)
-
-        listWireframe.presenter = listPresenter
-        listPresenter.interactor = listInteractor
-        listInteractor.output = listPresenter
-        
-        rootWireframe = listWireframe
+        rootWireframe = builder.buildModule(withCalendar: calendar, clock: clock, dataManager: listDataManager)
     }
 }
