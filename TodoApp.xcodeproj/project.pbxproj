@@ -29,6 +29,7 @@
 		FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */; };
 		FA54C2EE1EE4684100848FD0 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2ED1EE4684100848FD0 /* PListConverter.swift */; };
 		FA54C2F01EE46A6000848FD0 /* TodoItemPListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */; };
+		FAFC798C1EE9ED1A0080FECE /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC798B1EE9ED1A0080FECE /* ApplicationDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		FA54C2E91EE4665B00848FD0 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 		FA54C2ED1EE4684100848FD0 /* PListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
 		FA54C2EF1EE46A6000848FD0 /* TodoItemPListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemPListConverter.swift; sourceTree = "<group>"; };
+		FAFC798B1EE9ED1A0080FECE /* ApplicationDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				FA54C2C91EE45C2D00848FD0 /* AppDelegate.swift */,
 				FA54C2CA1EE45C2D00848FD0 /* Common */,
 				FA54C2D41EE45C2D00848FD0 /* Modules */,
+				FAFC798B1EE9ED1A0080FECE /* ApplicationDependencies.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				FA54C2E31EE461A500848FD0 /* TodoListInteractorIO.swift in Sources */,
 				FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */,
 				FA54C2DD1EE45C2D00848FD0 /* TodoApp.xcdatamodeld in Sources */,
+				FAFC798C1EE9ED1A0080FECE /* ApplicationDependencies.swift in Sources */,
 				FA12735B1EE8AB6700BE1012 /* TodoListTableViewController.swift in Sources */,
 				FA54C2E11EE4619000848FD0 /* TodoListInteractor.swift in Sources */,
 				FA54C2DA1EE45C2D00848FD0 /* Clock.swift in Sources */,

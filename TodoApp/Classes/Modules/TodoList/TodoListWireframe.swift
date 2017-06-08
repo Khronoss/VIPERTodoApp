@@ -22,15 +22,17 @@ class TodoListWireframe: NSObject {
         return _mainStoryboard!
     }
     
-    func presentListInterfaceFrom(window aWindow: UIWindow?) -> Void {
-        guard let window = aWindow else { return }
+    func presentListInterfaceFrom(window: UIWindow?) -> Void {
+        guard let navController = window?.rootViewController as? UINavigationController else {
+            return
+        }
         
         let controller = getListController()
         
         controller.presenter = presenter
         presenter.interface = controller
         
-        window.rootViewController = controller
+        navController.viewControllers = [controller]
     }
 
     func getListController() -> TodoListTableViewController {

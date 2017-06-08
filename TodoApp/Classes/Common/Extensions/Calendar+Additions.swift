@@ -21,7 +21,7 @@ extension Calendar {
 
     func daysRemainingInWeekWith(_ date: Date) -> Int {
         let weekdayComponent = component(.weekday, from: date)
-        let daysRange = range(of: .weekday, in: .weekday, for: date)
+        let daysRange = range(of: .weekday, in: .weekOfYear, for: date)
         let daysPerWeek = daysRange!.count
         let daysRemaining = daysPerWeek - weekdayComponent
 
