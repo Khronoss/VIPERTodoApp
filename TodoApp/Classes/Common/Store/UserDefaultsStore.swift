@@ -28,4 +28,10 @@ class UserDefaultsStore: NSObject {
         
         return items
     }
+    
+    func setTodoItems(_ items: [TodoItem]) -> Void {
+        let array = todoItemPlistConverter.arrayToPlist(items)
+        
+        userDefaults.set(array, forKey: savedTodoItemsKey)
+    }
 }

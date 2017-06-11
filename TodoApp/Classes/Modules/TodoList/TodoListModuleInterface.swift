@@ -9,7 +9,5 @@
 import Foundation
 
 protocol TodoListModuleInterface {
-    
     func updateView() -> Void
-    
 }

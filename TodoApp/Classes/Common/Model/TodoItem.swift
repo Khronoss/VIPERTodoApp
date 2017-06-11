@@ -8,12 +8,14 @@
 
 import UIKit
 
-class TodoItem: Any {
+class TodoItem: NSObject {
     
-    var title: String
-    var dueDate: Date
+    var title: String!
+    var dueDate: Date!
     
-    required init(title: String, dueDate: Date) {
+    convenience init(title: String, dueDate: Date) {
+        self.init()
+        
         self.title = title
         self.dueDate = dueDate
     }

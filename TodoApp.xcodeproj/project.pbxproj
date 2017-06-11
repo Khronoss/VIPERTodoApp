@@ -15,6 +15,11 @@
 		FA1273571EE8A9E200BE1012 /* TodoListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1273561EE8A9E200BE1012 /* TodoListViewInterface.swift */; };
 		FA12735B1EE8AB6700BE1012 /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12735A1EE8AB6700BE1012 /* TodoListTableViewController.swift */; };
 		FA12735D1EE8AEBC00BE1012 /* TodoListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12735C1EE8AEBC00BE1012 /* TodoListWireframe.swift */; };
+		FA202CDD1EED852400AAF7C0 /* TodoAddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA202CDC1EED852400AAF7C0 /* TodoAddDataManager.swift */; };
+		FA202CDF1EED857D00AAF7C0 /* UserDefaultsTodoAddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA202CDE1EED857D00AAF7C0 /* UserDefaultsTodoAddDataManager.swift */; };
+		FA202CE11EED8A5F00AAF7C0 /* TodoAddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA202CE01EED8A5F00AAF7C0 /* TodoAddPresenter.swift */; };
+		FA202CE31EED8B0700AAF7C0 /* TodoAddModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA202CE21EED8B0700AAF7C0 /* TodoAddModuleInterface.swift */; };
+		FA202CE51EED8B1200AAF7C0 /* TodoAddModuleInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA202CE41EED8B1200AAF7C0 /* TodoAddModuleInterfaceDelegate.swift */; };
 		FA2F61DF1EE44F8800BEE16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61DD1EE44F8800BEE16B /* Main.storyboard */; };
 		FA2F61E41EE44F8800BEE16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E31EE44F8800BEE16B /* Assets.xcassets */; };
 		FA2F61E71EE44F8800BEE16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F61E51EE44F8800BEE16B /* LaunchScreen.storyboard */; };
@@ -61,6 +66,11 @@
 		FA1273561EE8A9E200BE1012 /* TodoListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewInterface.swift; sourceTree = "<group>"; };
 		FA12735A1EE8AB6700BE1012 /* TodoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
 		FA12735C1EE8AEBC00BE1012 /* TodoListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListWireframe.swift; sourceTree = "<group>"; };
+		FA202CDC1EED852400AAF7C0 /* TodoAddDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAddDataManager.swift; sourceTree = "<group>"; };
+		FA202CDE1EED857D00AAF7C0 /* UserDefaultsTodoAddDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsTodoAddDataManager.swift; sourceTree = "<group>"; };
+		FA202CE01EED8A5F00AAF7C0 /* TodoAddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAddPresenter.swift; sourceTree = "<group>"; };
+		FA202CE21EED8B0700AAF7C0 /* TodoAddModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAddModuleInterface.swift; sourceTree = "<group>"; };
+		FA202CE41EED8B1200AAF7C0 /* TodoAddModuleInterfaceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAddModuleInterfaceDelegate.swift; sourceTree = "<group>"; };
 		FA2F61D61EE44F8800BEE16B /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F61DE1EE44F8800BEE16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA2F61E31EE44F8800BEE16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +130,8 @@
 				FA084EA91EEB510300DAB665 /* Interactor */,
 				FA084EAA1EEB510300DAB665 /* Presenter */,
 				FA084EAB1EEB510300DAB665 /* View */,
+				FA202CE21EED8B0700AAF7C0 /* TodoAddModuleInterface.swift */,
+				FA202CE41EED8B1200AAF7C0 /* TodoAddModuleInterfaceDelegate.swift */,
 			);
 			path = AddTodo;
 			sourceTree = "<group>";
@@ -127,6 +139,8 @@
 		FA084EA81EEB510300DAB665 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				FA202CDC1EED852400AAF7C0 /* TodoAddDataManager.swift */,
+				FA202CDE1EED857D00AAF7C0 /* UserDefaultsTodoAddDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -143,6 +157,7 @@
 		FA084EAA1EEB510300DAB665 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FA202CE01EED8A5F00AAF7C0 /* TodoAddPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -511,15 +526,20 @@
 				FA1273551EE8A88C00BE1012 /* TodoListModuleInterface.swift in Sources */,
 				FA084EAD1EEB514100DAB665 /* TodoAddInteractor.swift in Sources */,
 				FA54C2E81EE465EF00848FD0 /* UserDefaultsTodoListDataManager.swift in Sources */,
+				FA202CE51EED8B1200AAF7C0 /* TodoAddModuleInterfaceDelegate.swift in Sources */,
 				FA1273571EE8A9E200BE1012 /* TodoListViewInterface.swift in Sources */,
 				FA54C2DB1EE45C2D00848FD0 /* DeviceClock.swift in Sources */,
 				FA12735D1EE8AEBC00BE1012 /* TodoListWireframe.swift in Sources */,
 				FA54C2DC1EE45C2D00848FD0 /* TodoItem.swift in Sources */,
+				FA202CE31EED8B0700AAF7C0 /* TodoAddModuleInterface.swift in Sources */,
 				FA54C2EE1EE4684100848FD0 /* PListConverter.swift in Sources */,
+				FA202CDF1EED857D00AAF7C0 /* UserDefaultsTodoAddDataManager.swift in Sources */,
 				FA1273511EE8A4A500BE1012 /* Calendar+Additions.swift in Sources */,
 				FA54C2D91EE45C2D00848FD0 /* AppDelegate.swift in Sources */,
 				FA54C2E61EE4648000848FD0 /* TodoListDataManager.swift in Sources */,
 				FA54C2E31EE461A500848FD0 /* TodoListInteractorIO.swift in Sources */,
+				FA202CDD1EED852400AAF7C0 /* TodoAddDataManager.swift in Sources */,
+				FA202CE11EED8A5F00AAF7C0 /* TodoAddPresenter.swift in Sources */,
 				FA54C2EA1EE4665B00848FD0 /* UserDefaultsStore.swift in Sources */,
 				FA54C2DD1EE45C2D00848FD0 /* TodoApp.xcdatamodeld in Sources */,
 				FAFC798C1EE9ED1A0080FECE /* ApplicationDependencies.swift in Sources */,

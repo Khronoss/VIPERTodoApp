@@ -9,9 +9,10 @@
 import Foundation
 
 protocol TodoAddInteractorInput {
-    func addTodoItem(_ item: TodoItem) -> Void
+    func addNewItem(with title: String, and dueDate: Date) -> Void
 }
 
 protocol TodoAddInteractorOutput {
-    func todoItemAdded() -> Void
+    func didAddTodoItem() -> Void
+    func failedAddTodoItem() -> Void
 }
